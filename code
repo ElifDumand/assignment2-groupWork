@@ -33,7 +33,7 @@ public class git {
             int choice = in.nextInt();
             if(choice == 1)
             {
-                System.out.println("The minimum is: "+ findingMin());
+                System.out.println("The minimum is: "+ findingMin(randomArray));
             }
             else if (choice == 2) 
             {
