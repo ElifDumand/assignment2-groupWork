@@ -60,3 +60,26 @@ public class git {
                 System.out.println("please enter a valid number.");
             }
         }
+
+        private static double findAverage()
+        {
+            int sum = 0;
+            double average = 0;
+            for(int j : randomArray)
+            {
+                sum += j;
+            }
+            average = sum / randomArray.length;
+            return average;
+        }
+
+        private static void displayDifferenceFromAverage(int size)
+        {
+            double[] differenceDisplay = new double[size];
+            double average = findAverage();
+            for(int i = 0; i<differenceDisplay.length; i++)
+            {
+                differenceDisplay[i] = average - randomArray[i];
+            }
+            System.out.println("the differences are: "+ differenceDisplay);
+        }
