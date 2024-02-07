@@ -37,7 +37,7 @@ public class git {
             }
             else if (choice == 2) 
             {
-                System.out.println("The max is: " + findingMax());
+                System.out.println("The max is: " + findingMax(randomArray));
             }
             else if (choice == 3) {
                 System.out.println("Average: " + findAverage());
@@ -82,4 +82,19 @@ public class git {
                 differenceDisplay[i] = average - randomArray[i];
             }
             System.out.println("the differences are: "+ differenceDisplay);
+        }
+
+        public static int findingMax( int[] randomArray)
+        {
+            int biggest = randomArray[0];
+
+            for ( int i = 1; i < randomArray.length; i++)
+            {
+                if ( biggest < randomArray[i])
+                {
+                    biggest = randomArray[i];
+                }
+            }
+
+            return biggest;
         }
