@@ -60,6 +60,7 @@ public class git {
                 System.out.println("please enter a valid number.");
             }
         }
+    }
 
         private static double findAverage()
         {
@@ -138,5 +139,5 @@ public class git {
             return evenOddSum;
 
         }
-    }
+    
 }
