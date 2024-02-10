@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-
+import java.util.Arrays;
 /**
  * git
  */
@@ -100,13 +100,16 @@ public class git {
 
     private static void displayDifferenceFromAverage(int size)
     {
-        double[] differenceDisplay = new double[size];
+        int[] differenceDisplay = new int[size];
+        
         double average = findAverage();
+        
         for(int i = 0; i<differenceDisplay.length; i++)
         {
-            differenceDisplay[i] = average - randomArray[i];
+            differenceDisplay[i] = (int)average - randomArray[i];
         }
-        System.out.println("the differences are: "+ differenceDisplay);
+        
+        System.out.println("the differences are: "+ Arrays.toString(differenceDisplay));
     }
 
     public static int findingMax( int[] randomArray)
