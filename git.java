@@ -1,8 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 /**
  * git
  */
@@ -16,9 +14,28 @@ public class git {
         Random random = new Random();
         boolean logout = true;
         
-        System.out.print("Enter the size of the array: ");
-        int size = in.nextInt();
+        boolean sizevalid = true;
+        
+        int size=0;
+        
 
+        while (sizevalid)
+        {
+            System.out.println("Enter the size of the array: ");
+
+            if(in.hasNextInt())
+            {
+                size = in.nextInt();
+                
+                sizevalid= false;
+            }
+            else
+            {
+                System.out.println("Size must be a number!");
+                in.nextLine();
+            }
+        }
+        
         randomArray = new int[size];
 
         for(int i = 0; i<randomArray.length; i++)
@@ -60,6 +77,8 @@ public class git {
                 System.out.println("please enter a valid number.");
             }
         }
+    
+        in.close();
     }
 
         private static double findAverage()
