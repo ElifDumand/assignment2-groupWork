@@ -27,7 +27,14 @@ public class git {
             {
                 size = in.nextInt();
                 
-                sizevalid= false;
+                if(size<=0)
+                {
+                    System.out.println("Size must be a possitive numeber!");
+                }
+                else
+                {
+                    sizevalid= false;
+                }
             }
             else
             {
@@ -77,7 +84,7 @@ public class git {
                 System.out.println("please enter a valid number.");
             }
         }
-    
+
         in.close();
     }
 
