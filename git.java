@@ -14,11 +14,11 @@ public class git {
         Random random = new Random();
         boolean logout = true;
         
-        boolean sizevalid = true;
+        boolean sizevalid = false;
         
         int size=0;
         
-        while (sizevalid) {
+        while (!sizevalid) {
 
             System.out.println("Enter the size of the array: ");
 
@@ -32,7 +32,7 @@ public class git {
                 }
                 else 
                 {
-                    sizevalid= false;
+                    sizevalid= true;
                 }
             }
             else {
