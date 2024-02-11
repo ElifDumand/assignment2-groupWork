@@ -79,7 +79,7 @@ public class git {
             }
             else
             {
-                System.out.println("please enter a valid number.");
+                System.out.println("Please enter a valid number.");
             }
         }
 
@@ -89,12 +89,11 @@ public class git {
     private static double findAverage()
     {
         int sum = 0;
-        double average = 0;
         for(int j : randomArray)
         {
             sum += j;
         }
-        average = sum / randomArray.length;
+        double average = sum / randomArray.length;
         return average;
     }
 
@@ -109,7 +108,7 @@ public class git {
             differenceDisplay[i] = (int)average - randomArray[i];
         }
         
-        System.out.println("the differences are: "+ Arrays.toString(differenceDisplay));
+        System.out.println("The differences are: "+ Arrays.toString(differenceDisplay));
     }
 
     public static int findingMax( int[] randomArray)
